@@ -5,7 +5,69 @@ Command Line Arguments:
 
 Pet Image Label Dictionary has 4 key-value pairs.
 Below are 4 of them:
- 1 key:                    Bowl_01.jpg  label:                       bowl
- 2 key:                     Dog_02.jpg  label:                        dog
- 3 key:                  Rabbit_01.jpg  label:                     rabbit
- 4 key:                     Dog_01.jpg  label:                        dog
+ 1 key:                  Rabbit_01.jpg  label:                     rabbit
+ 2 key:                    Bowl_01.jpg  label:                       bowl
+ 3 key:                   Boxer_02.jpg  label:                      boxer
+ 4 key:                   Boxer_01.jpg  label:                      boxer
+
+     MATCH:
+
+                 Rabbit_01.jpg: 
+Real:                     rabbit   Classifier: wood rabbit, cottontail, cottontail rabbit, rabbit
+
+                   Bowl_01.jpg: 
+Real:                       bowl   Classifier:                    mixing bowl
+
+                  Boxer_02.jpg: 
+Real:                      boxer   Classifier:                          boxer
+
+                  Boxer_01.jpg: 
+Real:                      boxer   Classifier:                          boxer
+
+ NOT A MATCH:
+
+# Total Images 4 # Matches: 4 # NOT Matches: 0
+
+     MATCH:
+
+                 Rabbit_01.jpg: 
+Real:                     rabbit   Classifier: wood rabbit, cottontail, cottontail rabbit, rabbit  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                   Bowl_01.jpg: 
+Real:                       bowl   Classifier:                    mixing bowl  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                  Boxer_02.jpg: 
+Real:                      boxer   Classifier:                          boxer  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                  Boxer_01.jpg: 
+Real:                      boxer   Classifier:                          boxer  
+PetLabelDog: 1  ClassLabelDog: 1
+
+ NOT A MATCH:
+
+# Total Images 4 # Matches: 4 # NOT Matches: 0
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+
+
+*** Results Summary for CNN Model Architecture VGG ***
+N Images            :   4
+N Dog Images        :   2
+N Not-Dog Images    :   2
+N Not-Dog Images=  2
+ 
+pct_match has values = 100.0%
+pct_correct_dogs has values = 100.0%
+pct_correct_breed has values = 100.0%
+pct_correct_notdogs has values = 100.0%
+
+** Total Elapsed Runtime: 0:0:3
